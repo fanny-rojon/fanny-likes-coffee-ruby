@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: fannylikescoffee
+  api_key: '961826339172438'
+  api_secret: 6XBQiE1EWRKThDsME4tlQZdJDJw
+  enhance_image_tag: true
+  static_file_support: false
+production:
+  cloud_name: fannylikescoffee
+  api_key: '961826339172438'
+  api_secret: 6XBQiE1EWRKThDsME4tlQZdJDJw
+  enhance_image_tag: true
+  static_file_support: true
+test:
+  cloud_name: fannylikescoffee
+  api_key: '961826339172438'
+  api_secret: 6XBQiE1EWRKThDsME4tlQZdJDJw
+  enhance_image_tag: true
+  static_file_support: false
