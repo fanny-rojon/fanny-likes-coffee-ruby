@@ -1,7 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>FannyLikesCoffeeRuby</title>
+      <title>FANNY LIKES COFFEE</title>
+      <!-- Stylesheet -->
+<!--       <link rel="stylesheet" href="../../assets/style.css"> -->
+      <!-- Google Fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Cinzel|Karma:300,400|Lora:400,400i&display=swap" rel="stylesheet">
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+      <!-- Favicon -->
+      <link rel="shortcut icon" href="images/Favicon.png" type="image/x-icon">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +19,24 @@
   </head>
 
   <body>
+      <div class="header">
+        <h1><a href="index.html">FANNY LIKES COFFEE</a></h1>
+        <h2>among other things...</h2>
+      </div>
+
+      <div class="navbar">
+        <ul>
+          <li><a href="categories/beauty-style.html">Beauty & Style</a></li>
+          <li><a href="categories/food-drinks.html">Food & Drinks</a></li>
+          <li><a href="categories/health-fitness.html">Health & Fitness</a></li>
+          <li><a href="categories/home-decor.html">Home Decor</a></li>
+          <li><a href="categories/life-inspo.html">Life & Inspo</a></li>
+          <li><a href="about-me.html">About me</a></li>
+        </ul>
+      </div>
+
+
+
     <%= yield %>
   </body>
 </html>

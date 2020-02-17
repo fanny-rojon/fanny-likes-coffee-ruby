@@ -15,3 +15,37 @@
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+/*Imports*/
+
+@import url("components/header.scss");
+@import url("components/navbar.scss");
+@import url("components/slider.scss");
+@import url("components/cards.scss");
+@import url("components/footer.scss");
+@import url("components/article.scss");
+@import url("components/about-me.scss");
+
+/*Fonts
+font-family: 'Cinzel', serif;
+font-family: 'Lora', serif;
+font-family: 'Karma', serif;
+*/
+
+/*Main Style*/
+body, html {
+  margin: 0 auto;
+  padding: 0;
+  width: 80%;
+  height: 100%;
+  background-color: #F8F8F8;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+
+
