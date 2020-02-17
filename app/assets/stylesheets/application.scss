@@ -18,13 +18,13 @@
 
 /*Imports*/
 
-@import url("components/header.scss");
-@import url("components/navbar.scss");
-@import url("components/slider.scss");
-@import url("components/cards.scss");
-@import url("components/footer.scss");
-@import url("components/article.scss");
-@import url("components/about-me.scss");
+@import "header";
+@import "navbar";
+@import "slider";
+@import "cards";
+// @import "footer";
+// @import "article";
+// @import "about-me";
 
 /*Fonts
 font-family: 'Cinzel', serif;
@@ -33,16 +33,51 @@ font-family: 'Karma', serif;
 */
 
 /*Main Style*/
-body, html {
+body, html, .container {
   margin: 0 auto;
   padding: 0;
-  width: 80%;
+  width: 85%;
   height: 100%;
   background-color: #F8F8F8;
   align-items: center;
   justify-content: center;
 }
 
+/*Media Queries*/
+// Smallest device
+@media (min-width: 100px) and (max-width: 575px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 
 
 
