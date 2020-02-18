@@ -72,8 +72,25 @@
   </div> -->
 
   <div class="cards">
+    <% @posts.each do |post|  %>
+      <div class="card">
+        <div class="featured-image">
+          <%= link_to image_tag(post.media), post_path(post) %>
+        </div>
+        <div class="overlay">
+          <span class="category-title">
+            <%= link_to post.category, post_path(post) %>
+          </span>
+          <h2 class="entry-title">
+            <%= link_to post.title, post_path(post) %>
+          </h2>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
     <!-- Article 15 - The Best Banana Bread -->
-    <div class="card" id="card-banana-bread">
+<!--     <div class="card" id="card-banana-bread">
       <div class="featured-image">
         <a href="articles/article_15_BB.html">
           <img src="https://res.cloudinary.com/fannylikescoffee/image/upload/v1581091167/article_14_1_square_p76kso.jpg" alt="Banana Bread">
@@ -87,94 +104,7 @@
           <a href="articles/article_15_BB.html">The Best Banana Bread Recipe</a>
         </h2>
       </div>
-    </div>
-
-    <!-- Article 14 - Ale y Ole -->
-    <div class="card" id="card-aleyole">
-      <div class="featured-image">
-        <a href="articles/article_14_AYO.html">
-          <img src="https://res.cloudinary.com/fannylikescoffee/image/upload/v1581091166/article_12_1_square_m5jktp.jpg" alt="Ale y Ole">
-        </a>
-      </div>
-      <div class="overlay">
-        <span class="category-title">
-          <a href="categories/beauty-style.html/">Beauty & Style</a>
-        </span>
-        <h2 class="entry-title">
-          <a href="articles/article_14_AYO.html">Ale y Ole</a>
-        </h2>
-      </div>
-    </div>
-
-    <!-- Article 13 - Rupi Kaur -->
-    <div class="card" id="card-rupikaur">
-      <div class="featured-image">
-        <a href="articles/article_13_RK.html">
-          <img src="https://res.cloudinary.com/fannylikescoffee/image/upload/v1581091164/article_9_1_square_k3p8bo.jpg" alt="Rupi Kaur">
-        </a>
-      </div>
-      <div class="overlay">
-        <span class="category-title">
-          <a href="categories/life-inspo.html/">Life & Inspo</a>
-        </span>
-        <h2 class="entry-title">
-          <a href="articles/article_13_RK.html">Rupi Kaur</a>
-        </h2>
-      </div>
-    </div>
-
-    <!-- Article 12 - Apivita -->
-    <div class="card" id="card-apivita">
-      <div class="featured-image">
-        <a href="articles/article_12_AV.html">
-          <img src="https://res.cloudinary.com/fannylikescoffee/image/upload/v1581091167/article_15_1_square_uudepo.jpg">
-        </a>
-      </div>
-      <div class="overlay">
-        <span class="category-title">
-          <a href="categories/beauty-style.html">Beauty & Style</a>
-        </span>
-        <h2 class="entry-title">
-          <a href="articles/article_12_AV.html">Apivita</a>
-        </h2>
-      </div>
-    </div>
-
-    <!-- Article 11 - Paloma Cocktail -->
-    <div class="card" id="card-paloma-cocktail">
-      <div class="featured-image">
-        <a href="articles/article_11_PC.html">
-          <img src="https://res.cloudinary.com/fannylikescoffee/image/upload/v1581091165/article_11_1_square_uirbwn.jpg">
-        </a>
-      </div>
-      <div class="overlay">
-        <span class="category-title">
-          <a href="categories/food-drinks.html/">Food & Drinks</a>
-        </span>
-        <h2 class="entry-title">
-          <a href="articles/article_11_PC.html">Paloma Cocktail</a>
-        </h2>
-      </div>
-    </div>
-
-      <!-- Article 10 - Overnight Oats -->
-      <div class="card" id="card-overnight-oats">
-        <div class="featured-image">
-          <a href="articles/article_10_OO.html">
-            <img src="https://res.cloudinary.com/fannylikescoffee/image/upload/v1581091164/article_10_1_square_np8qg7.jpg">
-          </a>
-        </div>
-        <div class="overlay">
-          <span class="category-title">
-            <a href="categories/food-drinks.html/">Food & Drinks</a>
-          </span>
-          <h2 class="entry-title">
-            <a href="articles/article_10_OO.html">Overnight Oats</a>
-          </h2>
-        </div>
-      </div>
-
-  </div>
+    </div> -->
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="../../assets/javascript/slider.js"></script>
