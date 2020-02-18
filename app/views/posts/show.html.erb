@@ -1,11 +1,14 @@
 
 
+<div class="article">
+  <div class="article-header">
+    <%= image_tag(@post.media) %>
+    <p class="article-category"><%= raw @post.category %></p>
+    <h1><%= raw @post.title %></h1>
+    <p class="article-date text-center"><%= @post.created_at.strftime('%b %d, %Y') %></p>
+  </div>
 
-
-<div class="col-sm-11 col-xs-12 blog-content">
-  <h1>Title</h1>
-  <h2 class="text-center"><%= raw @post.title %></h2>
-  <h5 class="text-center"><%= @post.created_at.strftime('%b %d, %Y') %></h5>
-  <div><%= raw @post.body %></div>
-  <div><%= @post.media %></div>
+  <div class="article-body">
+    <p class="text-center"><%= raw @post.body %></p>
+  </div>
 </div>
