@@ -79,7 +79,7 @@
         </div>
         <div class="overlay">
           <span class="category-title">
-            <%= link_to post.category, post_path(post) %>
+            <%= link_to post.category.category_name, post_path(post) %>
           </span>
           <h2 class="entry-title">
             <%= link_to post.title, post_path(post) %>

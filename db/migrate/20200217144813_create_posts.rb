@@ -4,6 +4,7 @@ class CreatePosts < ActiveRecord::Migration[5.2]
       t.text :title
       t.text :body
       t.text :media
+      t.references :category, foreign_key: true
 
       t.timestamps
     end

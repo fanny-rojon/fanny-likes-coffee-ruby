@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   mount Ckeditor::Engine => '/ckeditor'
   root to: "posts#index"
+  get 'about-me', to: 'posts#about', as: :about
 
   resources :posts
-  post 'post/store'
+  resources :categories
+  # post 'post/store'
 end

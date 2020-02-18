@@ -10,7 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_02_18_080436) do
+ActiveRecord::Schema.define(version: 2020_02_18_130349) do
+
+  create_table "categories", force: :cascade do |t|
+    t.text "category_name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "ckeditor_assets", force: :cascade do |t|
     t.string "data_file_name", null: false
@@ -28,9 +34,10 @@ ActiveRecord::Schema.define(version: 2020_02_18_080436) do
     t.text "title"
     t.text "body"
     t.text "media"
+    t.integer "category_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "category"
+    t.index ["category_id"], name: "index_posts_on_category_id"
   end
 
 end

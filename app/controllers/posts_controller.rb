@@ -2,7 +2,12 @@ class PostsController < ApplicationController
   before_action :find_post, only: [:edit, :update, :show, :delete]
 
   def index
-    @posts = Post.all
+    if params["id"]
+      @category = Category.find(params["id"].to_i)
+      @posts = Post.select { |post| post.category_id == @category.id }
+    else
+      @posts = Post.all
+    end
   end
 
   def new
@@ -45,10 +50,13 @@ class PostsController < ApplicationController
     end
   end
 
+  def about
+  end
+
   private
 
   def post_params
-    params.require(:post).permit(:title, :category, :body, :media)
+    params.require(:post).permit(:title, :category_id, :body, :media)
   end
 
   def find_post
