@@ -1,10 +1,12 @@
 class CategoriesController < ApplicationController
   def index
-    @category = Category.find(params["id"].to_i)
-    @posts = Post.select { |post| post.category_id == @category.id }
+
   end
 
   def show
+    @category = Category.find(params["id"].to_i)
+    @posts = @category.posts
+    # @posts = Post.select { |post| post.category_id == @category.id }
   end
 
   def new

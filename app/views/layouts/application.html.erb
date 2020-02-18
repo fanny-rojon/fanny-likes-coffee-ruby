@@ -26,16 +26,11 @@
 
       <div class="navbar">
         <ul>
-          <li><a href="../?id=1">Beauty & Style</a></li>
-          <li><a href="../?id=2">Food & Drinks</a></li>
-          <li><a href="../?id=3">Health & Fitness</a></li>
-          <li><a href="../?id=4">Home Decor</a></li>
-          <li><a href="../?id=5">Life & Inspo</a></li>
-          <li><%= link_to "About me", about_path %></li>
+          <% Category.all.each do |category| %>
+          <li><%= link_to category.category_name, category_path(category) %></li>
+          <% end %>
         </ul>
       </div>
-
-
 
     <%= yield %>
 
