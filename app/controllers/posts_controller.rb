@@ -2,12 +2,13 @@ class PostsController < ApplicationController
   before_action :find_post, only: [:edit, :update, :show, :delete]
 
   def index
-    if params["id"]
-      @category = Category.find(params["id"].to_i)
-      @posts = Post.select { |post| post.category_id == @category.id }
-    else
-      @posts = Post.all
-    end
+    # if params["id"]
+    #   @category = Category.find(params["id"].to_i)
+    #   @ok_posts = Post.select { |post| post.category_id == @category.id }
+    #   @posts = ok_posts.reverse
+    # else
+      @posts = Post.all.reverse
+    # end
   end
 
   def new

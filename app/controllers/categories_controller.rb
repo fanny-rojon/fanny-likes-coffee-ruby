@@ -5,7 +5,7 @@ class CategoriesController < ApplicationController
 
   def show
     @category = Category.find(params["id"].to_i)
-    @posts = @category.posts
+    @posts = @category.posts.reverse
     # @posts = Post.select { |post| post.category_id == @category.id }
   end
 
