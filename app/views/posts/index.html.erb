@@ -51,25 +51,6 @@
     </div>
   </div> -->
 
-<!--   <div class="col-sm-10 col-sm-offset-1 col-xs-12 blog-content">
-    <% @posts.each do |post| %>
-    <div class="col-xs-12">
-      <div class="text-center">
-        <h2><%= post.title %></h2>
-        <h6><%= post.created_at.strftime('%b %d, %Y') %></h6>
-      </div>
-
-      <div>
-        <%= raw(post.body).truncate(358) %>
-      </div>
-
-      <div class="text-center">
-        <%= link_to "READ MORE", post_path(post) %>
-      </div>
-      <br>
-    </div>
-    <% end %>
-  </div> -->
 
   <div class="cards">
     <% @posts.each do |post|  %>
@@ -88,23 +69,6 @@
       </div>
     <% end %>
   </div>
-
-    <!-- Article 15 - The Best Banana Bread -->
-<!--     <div class="card" id="card-banana-bread">
-      <div class="featured-image">
-        <a href="articles/article_15_BB.html">
-          <img src="https://res.cloudinary.com/fannylikescoffee/image/upload/v1581091167/article_14_1_square_p76kso.jpg" alt="Banana Bread">
-        </a>
-      </div>
-      <div class="overlay">
-        <span class="category-title">
-          <a href="categories/food-drinks.html">Food & Drinks</a>
-        </span>
-        <h2 class="entry-title">
-          <a href="articles/article_15_BB.html">The Best Banana Bread Recipe</a>
-        </h2>
-      </div>
-    </div> -->
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="../../assets/javascript/slider.js"></script>
