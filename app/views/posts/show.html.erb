@@ -2,7 +2,8 @@
 
 <div class="article">
   <div class="article-header">
-    <%= image_tag(@post.media) %>
+    <%= cl_image_tag @post.media.key %>
+    <%#= image_tag(@post.media) %>
     <h1><%= raw @post.title %></h1>
     <p class="article-date text-center"><%= @post.created_at.strftime('%b %d, %Y') %></p>
   </div>
@@ -11,3 +12,5 @@
     <p><%= raw @post.body %></p>
   </div>
 </div>
+
+

@@ -74,7 +74,7 @@ GEM
       orm_adapter (~> 0.5.0)
       terrapin
     climate_control (0.2.0)
-    cloudinary (1.13.2)
+    cloudinary (1.12.0)
       aws_cf_signer
       rest-client
     coffee-rails (4.2.2)
@@ -238,7 +238,7 @@ DEPENDENCIES
   capybara (>= 2.15)
   chromedriver-helper
   ckeditor (~> 4.1)
-  cloudinary
+  cloudinary (~> 1.12.0)
   coffee-rails (~> 4.2)
   dotenv-rails
   jbuilder (~> 2.5)
